@@ -1,0 +1,105 @@
+<Style>* {
+    margin: 0;
+    padding: 0;
+ }
+ html, body {
+    height: 100vh;
+ }
+ body {
+    background-color: #222;
+ }
+ .box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+ }
+ .list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 0;
+ }
+ .list>li {
+    margin: 0 15px;
+ }
+ .list>li>a {
+    display: block;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(45deg,#fa00ff,#5709ac,#0e38d1);
+    background-size: 300% 300%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 2.4;
+    border-radius: 100%;
+    color: #fff;
+    transition: all 0.3s ease;
+ }
+ .list>li>a:hover {
+    animation: gradient 5s ease infinite;
+    transform: scale(1.15);
+ }
+ 
+ @keyframes gradient {
+    70% {
+       background-position: 100% 0;
+    }
+ }
+ 
+ @media (max-width:800px) {
+    .list>li {
+       margin: 0 10px;
+    }
+    .list>li>a {
+       width: 40px;
+       height: 40px;
+       font-size: 20px;
+       line-height: 2.1;
+    }
+ }
+ 
+ @media (max-width:550px) {
+    .list>li {
+       flex: 0 0 32%;
+       max-width: 32%;
+       margin: 0 0 10px 0;
+    }
+    .list>li>a {
+       margin: 0 auto;
+    }
+ }
+</Style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Замените цвет градиента у соцсетей. Для этого найдите linear-gradient в блоке CSS и планомерно замените цвета, прописаныее через # на другие 3 значения:
+
+#f7fa1f
+#ac3e09
+#fe1212
+
+И посмотрите на итог
+-->
+
+<div class="box">
+    <ul class="list">
+       <li><a href="#" target="_blank"><i class="zmdi zmdi-facebook"></i></a></li>
+       <li><a href="#" target="_blank"><i class="zmdi zmdi-behance"></i></a></li>
+       <li><a href="#" target="_blank"><i class="zmdi zmdi-codepen"></i></a></li>
+       <li><a href="#" target="_blank"><i class="zmdi zmdi-twitter"></i></a></li>
+       <li><a href="#" target="_blank"><i class="zmdi zmdi-twitch"></i></a></li>
+       <li><a href="#" target="_blank"><i class="zmdi zmdi-youtube-play"></i></a></li>
+    </ul>
+ </div>
+</body>
+</html>
