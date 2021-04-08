@@ -129,3 +129,52 @@
 // let arr = [2, 5, 3, 9]
 // result = arr[0] * arr[1] + arr[2]*arr[3]
 // console.log(result)
+
+// Создайте объект с ключами 1, 2 и 3 и значениями 'a', 'b' и 'c'.
+// let obj = {1: 'a', 2: 'b', 3:'c'}
+// console.log(obj)
+// let object = { key: 123, key1: 256, key5: 'ghj' }
+// console.log(object['key1'])
+
+// Создайте объект с ключами a, b и c и значениями 1, 2 и 3. Найдите сумму его элементов.
+// let obj = {a:1, b:2, c:3}
+// console.log(obj['a']+obj['b']+obj['c'])
+// console.log(obj.a)
+// let obj = {key1: 1, key2: 2, key3: 3}
+// console.log(obj.key1 + obj.key2+ obj.key3 )
+
+//Создайте объект user с ключами name (имя), surname (фамилия), patronymic (отчество) и какими-то произвольными значениями. Выведите на экран фамилию, имя и отчество через пробел.
+// const user = {
+//     name: "Саша",
+//     surname: "Пирогов",
+//     patronymic: "Васильевич"
+// }
+// console.log(user.surname +" " + user.name + " " + user.patronymic)
+// let arr = [1, 2, 3];
+// console.log( typeof arr[0] );
+// console.log( typeof {a: 1, b: 2, c: 3} );
+// console.log( typeof [1, 2, 3] );
+// let arr = [1, 2, 3];
+// console.log( typeof arr );
+// let arr = ['1', '2', '3'];
+// console.log( typeof arr[0] );
+// console.log( Array.isArray([1, 2, 3]) );
+// let arr1 = [1, 2, 3];
+// let arr2 = arr1;
+
+// arr1[0] = 'a';
+// console.log(arr2);
+// let arr1 = [1, 2, 3];
+// let arr2 = arr1;
+
+// arr1[0] = 'a';
+// arr2[1] = 'b';
+
+// console.log(arr1);
+// let arr1 = [1, 2, 3];
+// let arr2 = arr1;
+
+// arr1[0] = 'a';
+// arr2[0] = 'b';
+
+// console.log(arr2);
