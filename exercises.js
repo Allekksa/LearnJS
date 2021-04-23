@@ -992,10 +992,295 @@
 
 // заполнение массива с пропусками
 
-let arr = [];
+// let arr = [];
 
-for (let i = 2, j = 0; i <= 100; i += 2, j++) {
-	arr[j] = i;
-}
+// for (let i = 2, j = 0; i <= 100; i += 2, j++) {
+// 	arr[j] = i;
+// }
 
-console.log(arr);
+// console.log(arr);
+// изменение массива в цикле
+
+// let arr = [1, 2, 3, 4, 5]
+// for( let i = 0; i< arr.length; i++){
+// 	//arr[i] *= 2
+// 	//arr[i] = arr[i]**2
+// 	//arr[i] ++
+// 	//arr[i] +=5
+// 	//arr[i] --
+
+// }
+// console.log(arr)
+
+//Объявите пустой массив, а затем заполните его числами от 1 до 10. Используйте для этого метод push.
+// let arr = []
+// for(let i = 1; i<=10; i++){
+// arr.push(i)
+// }
+// console.log(arr)
+
+// let arr = []
+// for(let i = 1; i<=10; i++){
+// arr.push('x')
+// }
+// console.log(arr)
+//Заполнение массива из другого массива
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// let newArr =[]
+// for(elem of arr){
+// 	if(elem % 2 == 0 ){
+// newArr.push(elem)
+// 	}
+// }
+// console.log(newArr)
+
+// Преворот массива
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// // let newArr =[]
+// // for(let i = arr.length-1; i>= 0; i--){
+// // 	newArr.push(i)
+// // 	}
+
+// // console.log(newArr)
+// newArr = arr.reverse()
+// console.log(newArr)
+
+// формирование объекта из 2х массивов
+// let keys = ['a', 'b', 'c', 'd', 'e'];
+// let values = [1, 2, 3, 4, 5];
+// let obj = {}
+// for(let i =0; i <= 4; i++){
+// 	let key = keys[i]
+// 	let value = values[i]
+// 	obj[key] = value
+// }
+// console.log(obj)
+
+// let keys = ['a', 'b', 'c', 'd', 'e'];
+// let values = [1, 2, 3, 4, 5];
+// let obj = {}
+// for(let i =0; i <= 4; i++){
+// 	obj[keys[i]] = values[i]
+// }
+// console.log(obj)
+//С помощью цикла создайте объект, ключами которого будут названия дней, а значениями - их номера.
+// let days = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс']
+// let numbers = [1, 2, 3, 4, 5, 6, 7]
+// let week ={}
+// for(let i = 0; i < days.length; i++){
+// 	week[days[i]] = numbers[i]
+// } 
+// console.log(week)
+//  let days = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс']
+// let numbers = [1, 2, 3, 4, 5, 6, 7]
+// let week ={}
+// for(let i = 0; i < days.length; i++){
+// 	week[numbers[i]] = days[i]
+// } 
+// console.log(week)
+
+// Заполнение объекта из другого объекта. Запишем в новый объект элементы, значения которых являются четными числами
+// let obj = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+// let chetn ={}
+// for(key in obj){
+// 	if(obj[key] % 2 ==0 ){
+// chetn[key] = obj[key]
+// 	}
+// }
+// console.log(chetn)
+
+//Запишите в новый объект те элементы, значения которых расположены в промежутке от 10 до 20.
+
+// let obj = {'a': 12, 'b': 21, 'c': 13, 'd': 23, 'e': 17}; 
+// let newObj = {}
+// for(value in obj){
+// 	if(obj[value] >= 10 && obj[value] <= 20 ){
+// 		newObj[value] = obj[value]
+// 	}
+// }
+// console.log(newObj)
+
+
+//Запишите в новый объект дни недели, номера которых являются нечетными числами.
+// let obj = {1: 'пн', 2: 'вт', 3: 'ср', 4: 'чт', 5: 'пт', 6: 'сб', 7: 'вс'}
+// let newObj = {}
+// for(value in obj){
+	
+// 	if(value % 2 !== 0){
+// 		newObj[value] = obj[value]
+// 	}
+// }
+// console.log(newObj)
+
+
+//Используя цикл и метод push заполните массив 10-ю случайными целыми числами. Пусть случайные числа будут в промежутке от 1 до 10.
+// function getRandomBetween(max, min){
+//     return Math.floor(Math.random() * (max - min +1) + min)
+// }
+// let array = []
+// for(let i = 0; i <= 10; i++){
+//     let a = getRandomBetween(10,1)
+//     array.push(a)
+// }
+
+// console.log(array)
+
+// Переберите этот объект циклом и возведите каждый элемент этого объекта в квадрат.
+// let obj = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5};
+
+// for(key in obj){
+//     obj[key] = obj[key]**2
+// }
+// console.log(obj)
+
+//Обмен ключей и значений объекта
+// let obj = {a: 1, b: 2, c: 3, d: 4, e: 5};
+// let newObj = {}
+// for(key in obj){
+//     newObj[obj[key]] = key
+// }
+// console.log(newObj)
+
+//Задача 58.1
+
+// Дан следующий объект с работниками и их зарплатами:
+
+// let obj = {
+// 	employee1: 100,
+// 	employee2: 200,
+// 	employee3: 300,
+// 	employee4: 400,
+// 	employee5: 500,
+// 	employee6: 600,
+// 	employee7: 700,
+// };
+// // Увеличьте зарплату каждого работника на 10%.
+
+// for (elem in obj){
+//    obj[elem]=obj[elem]*1.1
+// }
+
+// console.log(obj)
+// Задача 58.2
+
+// Модифицируйте предыдущую задачу так, чтобы зарплата увеличивалась только тем работникам, у которых она меньше или равна 400.
+
+// for (elem in obj){
+//     if(obj[elem] <= 400){
+//        obj[elem]=obj[elem]*1.1
+//     }
+// }
+//     console.log(obj)
+// Задача 58.3
+
+// Даны следующие массивы:
+
+// let arr1 = [1, 2, 3, 4, 5];
+// let arr2 = [6, 7, 8, 9, 10];
+// let obj ={}
+// // С помощью этих массивов создайте новый объект, сделав его ключами элементы первого массива, а значениями - элементы второго.
+// for(let i = 0; i < arr1.length; i++){
+//     obj[arr1[i]] = arr2[i]
+    
+// }
+// console.log(obj)
+
+// Задача 58.4
+
+// Дан следующий объект:
+
+//  let obj = {1: 6, 2: 7, 3: 8, 4: 9, 5: 10};
+// // Найдите сумму ключей этого объекта и поделите ее на сумму значений.
+// let sumValue = 0
+// let sumKey = 0
+// for(key in obj){
+//     sumValue += obj[key]
+//     sumKey += Number(key)
+//    console.log(key)
+// }
+// console.log(sumValue / sumKey)
+
+
+
+
+// Задача 58.5
+
+// Дан следующий объект:
+
+//  let obj = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5};
+// // Запишите ключи этого объекта в один массив, а значения - в другой.
+// let keys = []
+// let values = []
+// for(key in obj){
+//     values.push(obj[key])
+//     keys.push(key)
+// }
+// console.log(keys)
+// console.log(values)
+
+
+// Задача 58.6
+
+// Дан следующий объект:
+
+// let obj = {
+// 	1: 125,
+// 	2: 225,
+// 	3: 128,
+// 	4: 356,
+// 	5: 145,
+// 	6: 281,
+// 	7: 452,
+// };
+// Запишите в новый массив элементы, значение которых начинается с цифры 1 или цифры 2.
+
+// let arr = []
+// for( key in obj){
+//     let str = String(obj[key])[0]
+//     if(str == 1 || str == 2){
+//         arr.push(obj[key])
+//     }
+// }
+// console.log(arr)
+
+// То есть у вас в результате получится вот такой массив:
+
+// let arr = [
+// 	125,
+// 	225,
+// 	128,
+// 	145,
+// 	281,
+// ];
+
+
+// Задача 58.7
+
+// Дан следующий массив:
+
+ //let arr = ['a', 'b', 'c', 'd', 'e'];
+// Создайте из этого массива следующий объект:
+
+// let arr = {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e'};
+
+// let obj ={}
+// for(let i = 0; i < arr.length; i++){
+//     obj[i+1] = arr[i]
+// }
+// console.log(obj)
+
+// Задача 58.8
+
+// Дан следующий массив:
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// // Создайте из этого массива следующий объект:
+
+// // let arr = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5};
+// let obj ={}
+// for(let i = 0; i < arr.length; i++){
+//             obj[arr[i]] = i+1
+      
+    
+// }
+// console.log(obj)
