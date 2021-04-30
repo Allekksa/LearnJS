@@ -134,14 +134,538 @@
 
 // Дан абзац и кнопка. В абзаце записано какое-то число. По нажатию на кнопку возведите значение абзаца в квадрат и запишите его обратно.
 
-// Задача 154.6
+// let elem1 = document.querySelector('#elem1')
+// let button = document.querySelector('#button')
+// button.addEventListener('click', sqrt)
 
-// Дан абзац с числом и кнопка. По нажатию на кнопку прибавьте к значению абзаца единицу и запишите полученное число обратно.
+// function sqrt(){
+//     elem1.innerHTML =   Number(elem1.innerHTML) **2
+    
+// }
 
-// Задача 154.7
+
 
 // Дан абзац с текстом и кнопка. По нажатию на кнопку запишите в конец текста абзаца восклицательный знак.
 
+// let elem1 = document.querySelector('#elem1')
+// let button = document.querySelector('#button')
+// button.addEventListener('click', sqrt)
+
+// function sqrt(){
+//     elem1.innerHTML = elem1.innerHTML + ' !' 
+    
+// }
 // Задача 154.8
 
 // Модифицируйте предыдущую задачу так, чтобы восклицательный знак записывался не в конец текста, а в начало.
+
+// let elem1 = document.querySelector('#elem1')
+// let button = document.querySelector('#button')
+// button.addEventListener('click', sqrt)
+
+// function sqrt(){
+//     elem1.innerHTML = '! ' + elem1.innerHTML 
+    
+// }
+//Дан абзац и кнопка. По нажатию на кнопку запишите в абзац текст '<i>hello</i>'.
+// let elem1 = document.querySelector('#elem1')
+// let button = document.querySelector('#button')
+// button.addEventListener('click', greet)
+
+// function greet(){
+//     elem1.innerHTML = '<b><i>Hallo!!!</i></b>'
+//     }
+
+//Дан абзац с текстом и кнопка. По нажатию на кнопку прочитайте текст абзаца, оберните этот текст в теги <b> и запишите новый текст обратно в абзац.
+// let elem1 = document.querySelector('#elem1')
+// let button = document.querySelector('#button')
+// button.addEventListener('click', greet)
+
+// function greet(){
+//     //elem1.innerHTML = `<b><i>${elem1.innerHTML}</i></b>`
+//     elem1.innerHTML = '<b><i>' + elem1.innerHTML + '</i></b>'
+//     }
+
+// Дан следующий инпут:
+
+// <input id="elemm" type="email">
+// Дана также кнопка. По нажатию на кнопку выведите на экран содержимое атрибута type указанного выше инпута.
+
+// let elemm = document.querySelector('#elemm')
+// let button = document.querySelector('#button')
+
+// button.addEventListener('click', atribut)
+
+// function atribut(){
+//     console.log(elemm.type)
+// }
+// Задача 155.2
+
+// Дан следующий инпут:
+
+// <input id="elemm" type="email">
+// Дана также кнопка. По нажатию на кнопку запишите в атрибут type значение submit.
+
+// let elemm = document.querySelector('#elemm')
+// let button = document.querySelector('#button')
+
+// button.addEventListener('click', atribut)
+
+// function atribut(){
+//     elemm.type = 'submit'
+//     console.log(elemm.type)
+// }
+// Задача 155.3
+
+// Пусть у вас есть ссылка в виде тега a, кнопка и абзац. По нажатию на кнопку выведите в абзац содержимое атрибута href ссылки.
+/* <a href="https://google.com" target="_blank">Google</a>
+  <p class="www">text</p>
+   <input id="button" type="submit">  */
+
+//    let paragraf = document.querySelector('.www')
+//    let button = document.querySelector('#button')
+//    let a = document.querySelector('a')
+// button.addEventListener('click', href)
+
+// function href(){
+//    paragraf.innerHTML = a.href 
+// }
+// Задача 155.4
+
+// Пусть у вас есть ссылка и кнопка. По нажатию на кнопку добавьте в конец текста ссылки содержимое ее атрибута href в круглых скобках.
+// let paragraf = document.querySelector('.www')
+//    let button = document.querySelector('#button')
+//    let a = document.querySelector('a')
+// button.addEventListener('click', href)
+
+// function href(){
+//    paragraf.innerHTML =  paragraf.innerHTML + ' (' + a.href + ' )' 
+// }
+// Задача 155.5
+
+// Пусть у вас есть картинка. Разместите ее на странице в помощью тега img. Пусть даны также кнопка и абзац. Сделайте так, чтобы по клику на кнопку в абзац записался путь к картинки из ее атрибута src.
+// let paragraf = document.querySelector('.www')
+// let button = document.querySelector('#button')
+// let img = document.querySelector('img')
+
+// button.addEventListener('click', href)
+
+
+// function href(){
+//    paragraf.innerHTML = img.src
+// }
+// Задача 155.6
+
+// Дана картинка в теге img и кнопка. По нажатию на кнопку в атрибут width запишите значение 300.
+
+// let paragraf = document.querySelector('.www')
+// let button = document.querySelector('#button')
+// let img = document.querySelector('img')
+
+// button.addEventListener('click', width)
+
+
+// function width(){
+//    img.width = '300'
+// }
+
+// Задача 155.7
+
+// Дана картинка в теге img и кнопка. Пусть в атрибуте width задана некоторая ширина. Сделайте кнопку, по нажатию на которую ширина картинки будет увеличиваться в 2 раза.
+// let paragraf = document.querySelector('.www')
+// let button = document.querySelector('#button')
+// let img = document.querySelector('img')
+
+// button.addEventListener('click', width)
+
+
+// function width(){
+//    img.width =  Number(img.width)*2
+// }
+// Задача 155.8
+
+// Пусть у вас есть две картинки. Сделайте на странице тег img и две кнопки. По нажатию на первую кнопку запишите в атрибут src путь к первой картинке, а по нажатию на вторую - путь ко второй картинке.
+
+// "https://avatars.mds.yandex.net/get-zen_doc/1904579/pub_5de2a0ab0ce57b00ae8f8132_5de2a0da97b5d400b108347a/scale_1200"
+// "https://icdn.lenta.ru/images/2020/02/05/12/20200205121131878/pwa_list_rect_1280_535d088d238ce583d228e8ea520d690b.jpg"
+// let img1 = document.querySelector('.img1')
+// let img2 = document.querySelector('.img2')
+// let button = document.querySelector('#button')
+// let button1 = document.querySelector('#button1')
+
+// button.addEventListener('click', img1src)
+// button1.addEventListener('click', img2src)
+
+
+// function img1src(){
+// img1.src = "https://avatars.mds.yandex.net/get-zen_doc/1904579/pub_5de2a0ab0ce57b00ae8f8132_5de2a0da97b5d400b108347a/scale_1200"
+// img1.width = '300'
+// }
+
+// function img2src(){
+//     img2.src = "https://icdn.lenta.ru/images/2020/02/05/12/20200205121131878/pwa_list_rect_1280_535d088d238ce583d228e8ea520d690b.jpg"
+//     img2.width = '300'
+// }
+
+//Сделайте кнопку, нажатие на которую будет выводить текущий текст инпута.
+// let inputText = document.querySelector('#elemtext')
+
+// button.addEventListener('click', text)
+
+// function text(){
+//     inputText.value 
+// }
+
+// Дан инпут, абзац и кнопка. По нажатию на кнопку запишите в абзац текст из инпута.
+// let button = document.querySelector('#button')
+// let inputText = document.querySelector('#elemtext')
+// let paragraf = document.querySelector('.www')
+
+// button.addEventListener('click', text)
+
+// function text(){
+//     paragraf.innerHTML = inputText.value
+// }
+
+// Задача 156.4
+
+// Даны два инпута и кнопка. В первый инпут пользователем вводится число. По нажатию на кнопку запишите во второй инпут квадрат введенного числа.
+// let button = document.querySelector('#button')
+// let inputText = document.querySelector('#elemtext')
+// let inputText2 = document.querySelector('#elemtext2')
+
+// button.addEventListener('click', text)
+
+// function text(){
+//     inputText2.value = Number(inputText.value)**2
+// }
+
+// Задача 156.5
+
+// Даны два инпута и кнопка. По нажатию на кнопку запишите в первый инпут значение второго инпута, а во второй инпут - значение первого. Ваш код должен работать универсально, для любых значений инпутов.
+// let button = document.querySelector('#button')
+// let inputText = document.querySelector('#elemtext')
+// let inputText2 = document.querySelector('#elemtext2')
+
+// button.addEventListener('click', text)
+
+// function text(){
+   
+//     let firstInput = inputText.value
+//     let secondInput = inputText2.value 
+//     inputText2.value = firstInput//присвоила второму инпуту то, что введено в первом
+//     inputText.value = secondInput//присвоила первому инпуту то, что введено во втором
+// }
+
+
+
+
+// Даны 5 инпутов, абзац и кнопка. В инпут вводятся числа. По нажатию на кнопку запишите среднее арифметическое введенных чисел в абзац.
+
+// let button = document.querySelector('#button')
+// let inputText = document.querySelector('#elemtext')
+// let inputText2 = document.querySelector('#elemtext2')
+// let inputText3 = document.querySelector('#elemtext3')
+// let inputText4 = document.querySelector('#elemtext4')
+// let inputText5 = document.querySelector('#elemtext5')
+// let paragraf = document.querySelector('.vwww')
+// button.addEventListener('click', av)
+
+// function av(){
+//  let aver =  (Number(inputText.value) + Number(inputText2.value) + Number(inputText3.value) + Number(inputText4.value) + Number(inputText5.value)) /5
+//  paragraf.innerHTML = aver
+
+
+// }
+// Фокус текстовых полей
+
+
+
+// Дан инпут. По получению фокуса запишите в него число 1, а по потери фокуса - число 2.
+
+// let button = document.querySelector('#button')
+// let inputText = document.querySelector('#elemtext')
+
+
+// inputText.addEventListener('focus', function(){
+//     inputText.value = '1'
+// })
+// inputText.addEventListener('blur', function(){
+//     inputText.value = '2'
+// })
+
+
+// Дан инпут. Пусть в него вводится число. По потери фокуса выведите на экран квадрат этого числа.
+
+// let inputText = document.querySelector('#elemtext')
+// let paragraf = document.querySelector('.vwww')
+
+
+// inputText.addEventListener('blur', function(){
+//     console.log(inputText.value)
+//     paragraf.innerHTML = Number(inputText.value) ** 2
+// })
+
+// Задача 157.3
+
+// Дан инпут, в котором изначально есть какой-то текст. По получению фокуса инпутом очистите содержимое этого инпута.
+// let inputText = document.querySelector('#elemtext')
+// inputText.addEventListener('focus', function(){
+ 
+//     inputText.value =''
+// })
+
+// Дан див:
+
+// <div id="elem" class="content no-gap"></div>
+// Дана также кнопка. По нажатию на кнопку прочитайте и выведите на экран значение атрибута class нашего дива.
+// let div = document.querySelector('#elem')
+// let button = document.querySelector('#button')
+
+// button.addEventListener('click', function(){
+//    console.log(div.className)
+// })
+// Дан див:
+
+// <div id="elem"></div>
+// Дана также кнопка. По нажатию на кнопку запишите в атрибут class нашего дива какой-нибудь класс.
+// let div = document.querySelector('#elem')
+// let button = document.querySelector('#button')
+
+// button.addEventListener('click', function(){
+//    div.className = 'newClass'
+// })
+
+
+// Дан див с несколькими CSS классами, записанными через пробел:
+
+// <div id="elem" class="aaa bbb ccc"></div>
+// Дана также кнопка. По нажатию на кнопку получите массив CSS классов нашего дива.
+// let div = document.querySelector('#elem')
+// let button = document.querySelector('#button')
+
+// button.addEventListener('click', function(){
+//    classArray = div.className.split(' ')
+//    console.log(classArray)
+// })
+
+
+
+// Дан инпут. По получению фокуса этим инпутом запишите в него число 1, а по потери фокуса - число 2. Для обращения у инпуту внутри функции-обработчика используйте объект this.
+// let input = document.querySelector('#elemtext')
+
+// input.addEventListener('focus',function(){
+// this.value = '1'
+// } )
+
+
+// input.addEventListener('blur',function(){
+//     this.value ='2'
+// } )
+
+// Дана кнопка, значением которой служит число 1. Сделайте так, чтобы по клику на эту кнопку ее значение каждый раз увеличивалось на единицу.
+// let button = document.querySelector('#button')
+// button.addEventListener('click', function(){
+//     this.value++
+//     console.log(this.value)
+// })
+
+
+
+// Даны 5 абзацев с какими-то текстами. По клику на любой абзац запишите в конец его текста восклицательный знак.
+
+// let elem1 = document.querySelector('#elem1')
+// let elem2 = document.querySelector('#elem2')
+// let elem3 = document.querySelector('#elem3')
+// let elem4 = document.querySelector('#elem4')
+// let elem5 = document.querySelector('#elem5')
+
+// elem1.addEventListener('click',func)
+// elem2.addEventListener('click',func)
+// elem3.addEventListener('click',func)
+// elem4.addEventListener('click',func)
+// elem5.addEventListener('click',func)
+
+// document.querySelector('#elem1').addEventListener('click',func)
+// document.querySelector('#elem2').addEventListener('click',func)
+// document.querySelector('#elem3').addEventListener('click',func)
+// document.querySelector('#elem4').addEventListener('click',func)
+// document.querySelector('#elem5').addEventListener('click',func)
+
+
+// function func(){
+//     this.innerHTML += "!"
+// }
+
+
+// Даны 3 инпута, в которых записаны какие-то числа. По потери фокуса в любом из инпутов возведите стоящее в нем число в квадрат.
+
+// let inputText = document.querySelector('#elemtext')
+// let inputText2 = document.querySelector('#elemtext2')
+// let inputText3 = document.querySelector('#elemtext3')
+
+// inputText.addEventListener('blur', func)
+// inputText2.addEventListener('blur', func)
+// inputText3.addEventListener('blur', func)
+// function func(){
+//     this.value= this.value**2
+// }
+
+// Даны абзацы и кнопка. По нажатию на кнопку найдите все абзацы, переберите из циклом и установите текст каждого абзаца в значение text.
+
+
+// document.querySelector('#button').addEventListener('click', function(){
+//     let pArray = document.querySelectorAll('p')
+//     for(elem of pArray){
+//         elem.innerHTML= 'text'
+//     }
+// })
+
+
+// Даны абзацы с текстом и кнопка. По нажатию на кнопку запишите в конец текста каждого абзаца его порядковый номер.
+
+
+// document.querySelector('#button').addEventListener('click', function(){
+//     let pArray = document.querySelectorAll('p')
+//     for(let i= 0; i<pArray.length; i++){
+//         pArray[i].innerHTML= 'text' + `${i+1} ` 
+//     }
+// })
+
+
+// let pArray = document.querySelectorAll('p')
+        
+//         for(elem of pArray){
+//             elem.addEventListener('click', func)
+//         }
+    
+//     function func(){
+//         console.log(this.innerHTML)
+//     }
+
+//     Задача 162.1
+
+// Дана следующая функция:
+// let inputArray = document.querySelectorAll('input')
+// for(elem of inputArray){
+//     elem.addEventListener('blur', func)
+// }
+// function func() {
+// 	this.value = Number(this.value) + 1;
+// }
+// Даны также инпуты. Сделайте так, чтобы по потери фокуса в любом из наших инпутов выполнялась приведенная выше функция.
+
+
+// Дана кнопка, значением которой служит число 1. Сделайте так, чтобы по клику на эту кнопку ее значение каждый раз увеличивалось на единицу. После того, как значение кнопки достигнет 10 - отвяжите обработчик события, чтобы кнопка больше не реагировала на нажатие.
+
+// let button = document.querySelector('#button')
+// button.addEventListener('click', func)
+
+// function func(){
+//     this.value++
+//     if(this.value>=10){
+//         button.removeEventListener('click', func)
+//         console.log('лимит кликов достигло 10')
+//     }
+// }
+
+//Даны абзацы. По нажатию на любой из абзацев добавьте ему в конец восклицательный знак. Сделайте так, чтобы это добавление происходило лишь по первому нажатию.
+
+// let pArray =  document.querySelectorAll('p')
+// for(elem of pArray){
+//     elem.addEventListener('click',func)
+// }
+
+// function func(){
+//     this.innerHTML += "!"
+//     this.removeEventListener('click',func)
+// }
+
+// Дан элемент:
+
+// <input id="elem" class="www zzz">
+// Получите значение его атрибута class.
+// let elem = document.querySelector('#elem')
+// // let elemAttribute = elem.getAttribute('class').split(' ')
+// // console.log(elemAttribute)
+// elem.setAttribute('value', '1234567')
+// elem.removeAttribute('value')
+// console.log(elem.hasAttribute('value'))
+
+//Дан инпут с каким-то начальным значением. Дана также кнопка. По нажатию на кнопку определите, было ли изменено пользователем начальное значение инпута.
+// let elem = document.querySelector('#elem')
+// let button = document.querySelector('#button')
+// button.addEventListener('click', function(){
+//     if(elem.getAttribute('value') === elem.value){
+//         console.log('В инпут пока ничего не вводилось')
+//     }else{
+//         console.log('в инпут ввели ' + elem.value)
+//     }
+// })
+
+//Дан инпут с каким-то начальным значением. Пусть пользователь меняет это значение. Сделайте рядом с инпутом кнопку, по нажатию на которую value инпута вернется в изначальное значение.
+// let elem = document.querySelector('#elem')
+// let button = document.querySelector('#button')
+// button.addEventListener('click', function(){
+//     elem.value = 'привет'
+// })
+
+
+// Задача 168.1
+
+// Дан элемент:
+
+// <p id="elem" class="www ggg zzz"></p>
+// Узнайте количество его классов.
+
+// Задача 168.2
+
+// Дан элемент:
+
+// <p id="elem" class="www ggg zzz"></p>
+// Переберите в цикле его классы.
+
+// Добавление классов
+// Изучите теорию по следующим ссылкам:
+
+// classList.add
+
+// Задача 168.3
+
+// Дан элемент:
+
+// <p id="elem" class="www ggg zzz"></p>
+// Добавьте ему класс xxx.
+
+// Удаление классов
+// Изучите теорию по следующим ссылкам:
+
+// classList.remove
+
+// Задача 168.4
+
+// Дан элемент:
+
+// <p id="elem" class="www ggg zzz"></p>
+// Удалите у него класс www и класс zzz.
+
+// Проверка классов
+// Изучите теорию по следующим ссылкам:
+
+// classList.contains
+
+// Задача 168.5
+
+// Дан элемент:
+
+// <p id="elem" class="www ggg zzz"></p>
+// Проверьте наличие у него класса ggg.
+
+// Чередование классов
+// Изучите теорию по следующим ссылкам:
+
+// classList.toggle
+
+// Задача 168.6
+
+// Дан элемент. Добавьте ему класс www, если его нет и удалите - если есть.
