@@ -1732,3 +1732,364 @@
 // let a = -5
 // let b = -6
 // console.log(Math.abs(a-b))
+
+//Строковые методы JavaScript
+// Задача 74.1
+
+// Дана строка 'js'. Сделайте из нее строку 'JS'.
+
+// let str = 'js'
+// console.log(str.toUpperCase())
+
+// Задача 74.2
+
+// Дана строка 'JS'. Сделайте из нее строку 'js'.
+
+// let str = 'JS'
+// console.log(str.toLowerCase())
+
+// Работа с substr, substring, slice
+
+// Задача 74.3
+
+// Дана строка 'я учу javascript!'. Вырежьте из нее слово 'учу' и слово 'javascript' тремя разными способами (через substr, substring, slice).
+
+// let str = 'я учу javascript!'
+
+// console.log(str.substr(2, 3))
+// console.log(str.substr(-11, 10))
+
+// console.log(str.substring(2, 5))
+
+// console.log(str.substring(6, 16))
+
+
+// console.log(str.slice(2, 5))
+// console.log(str.slice(-11,16))
+
+// Работа с indexOf
+
+// Задача 74.4
+
+// Дана строка 'abcde'. Определите позицию буквы 'c' в этой строке.
+// let str = 'abcde'
+// console.log(str.indexOf('c'))
+
+// Задача 74.5
+
+// Дана строка. Проверьте, есть ли в этой строке символ 'a'.
+// let str = 'abcde'
+// let isA = str.indexOf('a')
+
+// if(isA == -1){
+//     console.log('нет')
+// }else{
+//     console.log('да')
+// }
+
+// Задача 74.6
+
+// Дана строка. Проверьте, начинается ли эта строка с символа 'a'.
+// let str = 'abcde'
+// let isA = str.indexOf('a')
+
+// if(isA == 0){
+//     console.log('да')
+// }else{
+//     console.log('нет')
+// }
+
+
+// Задача 74.7
+
+// Дана строка. Проверьте, заканчивается ли эта строка на символ 'a'.
+// let str = 'mbcda'
+// let isA = str.indexOf('a')
+// let length = str.length-1
+
+// if(isA == length ){
+//     console.log('да')
+// }else{
+//     console.log('нет')
+// }
+
+// Задача 74.8
+
+// Дана строка. Проверьте, начинается ли эта строка на http://.
+
+
+// let srt = 'http://ksjfufsuhf.ru'
+// let indStr = srt.indexOf('http://')
+// if(indStr == 0){
+//     console.log('строка начинается на http://')
+// }else{
+//     console.log('не начинается')
+// }
+
+// Задача 74.9
+
+// Дана строка. Проверьте, заканчивается ли эта строка на .html.
+
+
+// let srt = 'http://ksjfufsuhf.html'
+// let indStr = srt.lastIndexOf('.html')
+// if(indStr == srt.length-5){
+//     console.log('строка заканчивается на .html')
+// }else{
+//     console.log('не заканчивается')
+// }
+
+// Работа с startsWith, endsWith
+  
+
+// Задача 74.10
+
+// Дана строка. Проверьте, начинается ли эта строка на http://.
+// let str= 'http://khkjrdg.ru'
+// console.log(str.startsWith('http://'))
+
+// Задача 74.11
+
+// Дана строка. Проверьте, заканчивается ли эта строка на .html.
+
+// let str = 'http://ksjfufsuhf.html'
+// console.log(str.endsWith('.html'))
+
+// Работа с split
+
+
+// Задача 74.12
+
+// Дана строка '1-2-3-4-5'. С помощью метода split запишите каждое число этой строки в отдельный элемент массива.
+// let str = '1-2-3-4-5'
+// let newArr = str.split('-')
+// let arr = []
+// for(let i = 0; i < newArr.length; i++){
+// arr[i] = Number(newArr[i])
+// }
+
+// console.log(arr)
+// Задача 74.13
+
+// Дана строка '12345'. С помощью метода split запишите каждый символ этой строки в отдельный элемент массива.
+// let str = '12345'
+// let arr = str.split('')
+// console.log(arr)
+
+// Работа с join
+
+// Задача 74.14
+
+// Дан следующий массив:
+
+// let arr = [1, 2, 3, 4, 5];
+// // С помощью метода join слейте его в строку '1-2-3-4-5'.
+// let str = arr.join('-')
+// console.log(str)
+
+// Задача 75.1
+
+// Дан массив [1, 2, 3]. Добавьте ему в конец элементы 4, 5, 6.
+// let arr = [1, 2, 3]
+// arr.push(4, 5, 6)
+// console.log(arr)
+// Задача 75.2
+
+// Дан массив [1, 2, 3]. Добавьте ему в начало элементы 4, 5, 6.
+// let arr = [1, 2, 3]
+// arr.unshift(4, 5, 6)
+// console.log(arr)
+
+// Работа с shift, pop
+
+
+// Задача 75.3
+
+// Дан массив ['js', 'css', 'jq']. Выведите на экран первый элемент.
+
+// let arr = ['js', 'css', 'jq']
+// console.log(arr.shift())
+// Задача 75.4
+
+// Дан массив ['js', 'css', 'jq']. Выведите на экран последний элемент.
+// let arr = ['js', 'css', 'jq']
+// console.log(arr.pop())
+// Работа с slice
+// Изучите теорию по следующим ссылкам:
+
+// Задача 75.5
+
+// Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3].
+
+// let arr = [1, 2, 3, 4, 5]
+// let newArr = arr.slice(0,3)
+// console.log(newArr)
+// Задача 75.6
+
+// Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [4, 5].
+
+// let arr = [1, 2, 3, 4, 5]
+// let newArr = arr.slice(3)
+// console.log(newArr)
+
+
+// Работа с splice
+
+
+// Дан массив [1, 2, 3, 4, 5]. С помощью метода splice преобразуйте массив в [1, 4, 5].
+// let arr = [1, 2, 3, 4, 5]
+// newArr = arr.splice(1, 2)
+// console.log(arr)
+// Задача 75.8
+
+// Дан массив [1, 2, 3, 4, 5]. С помощью метода splice запишите в новый массив элементы [2, 3, 4].
+
+// let arr = [1, 2, 3, 4, 5]
+// newArr = arr.splice(1, 3)
+// console.log(newArr)
+
+// Задача 75.9
+
+// Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 2, 3, 'a', 'b', 'c', 4, 5].
+// let arr = [1, 2, 3, 4, 5]
+// newArr = arr.splice(2, 0,'a', 'b', 'c')
+// console.log(arr)
+
+// Задача 75.10
+
+// Дан массив [1, 2, 3, 4, 5]. С помощью метода splice сделайте из него массив [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e'].
+
+
+// let arr = [1, 2, 3, 4, 5]
+// newArr = arr.splice(1, 0,'a', 'b')
+// neArr = arr.splice(6, 0, 'c')
+// nArr = arr.splice(8, 0, 'e')
+// console.log(arr)
+
+// Работа с indexOf
+
+
+// Задача 75.11
+
+// Дан массив с числами. Проверьте, есть ли в этом массиве число 3.
+// let arr = [1, 2, 8, 4, 3]
+// if (arr.indexOf(3)== -1){
+//     console.log('нет')
+// }else{
+//     console.log('да')
+// }
+
+
+
+// Регистр символов
+// Пусть у нас есть некоторая переменная с текстом:
+
+//  let str = 'london';
+// // Давайте преобразуем первую букву этой строки в верхний регистр:
+// let result = str.slice(0,1).toUpperCase()+str.slice(1)
+// console.log(result)
+
+
+// Задача 76.1
+
+// Преобразуйте последнюю букву строки в верхний регистр.
+// let str = 'london';
+// let result =str.slice(0,str.length-1) + str.slice(str.length-1).toUpperCase()
+// console.log(result)
+// Задача 76.2
+
+// Преобразуйте первые 2 буквы строки в верхний регистр.
+// let str = 'london'
+
+// let result = str.slice(0,2).toUpperCase()+str.slice(1)
+//  console.log(result)
+
+// Задача 76.3
+
+// Пусть дана строка, у которой первая буква в верхнем регистре, например вот такая:
+
+// let str = 'London';
+// Преобразуйте первую букву строки в нижний регистр.
+
+// let str = 'London'
+// let result = str.slice(0,1).toLowerCase()+str.slice(1)
+// console.log(result)
+
+// Слова в строке
+// Пусть у нас есть некоторая переменная с текстом, состоящим из нескольких слов:
+
+//  let str = 'word1 word2 word3';
+
+//  let arr = str.split(' ')
+//  for( let i = 0; i < arr.length; i++){
+//     arr[i] = arr[i].slice(0,1).toUpperCase()+arr[i].slice(1)
+// }
+// console.log(arr.join(' '))
+    // Давайте напишем код, который преобразует первую букву каждого слова в верхний регистр.
+
+// Сразу приведу решение с комментариями:
+
+// let str = 'word1 word2 word3';
+
+// // Разобьем строку в массив слов:
+// let words = str.split(' ');
+
+// for (let i = 0; i < words.length; i++) {
+// 	// Увеличим регистр каждого слова:
+// 	words[i] = words[i].slice(0, 1).toUpperCase() + words[i].slice(1);
+// }
+
+// // Сольем массив обратно в строку:
+// let result = words.join(' ');
+// console.log(result); // выведет 'Word1 Word2 Word3'
+// Задача 76.4
+
+// Самостоятельно, не подсматривая в мой код, повторите мое решение описанной задачи.
+
+// Задача 76.5
+
+// Преобразуйте строку 'var_test_text' в 'VarTestText'.
+
+// Написанный код должен работать для любых строк такого типа (то есть для строк, в которых слова разделены символов подчеркивания).
+
+// let str = 'var_test_text'
+// let words = str.split('_')
+// for( let i = 0; i < words.length; i++){
+//     words[i] = words[i].slice(0,1).toUpperCase() + words[i].slice(1)
+// }
+// console.log(words.join(''))
+// Задача 76.6
+
+// Модифицируйте предыдущую задачу так, чтобы первая буква новой строки была в нижнем регистре.
+
+// let str = 'var_test_text'
+// let words = str.split('_')
+// for( let i = 0; i < words.length; i++){
+//     if(i > 0){
+//     words[i] = words[i].slice(0,1).toUpperCase() + words[i].slice(1)
+// }else{
+//     words[i] = words[i].slice(0,1).toLowerCase() + words[i].slice(1)
+// }
+// }
+
+// console.log(words.join(''))
+// Переворот строки
+
+// let str = '12345'
+// let result = str.split('').reverse().join('')
+// console.log(result)
+// Пусть у нас есть некоторая переменная со строкой:
+
+// let str = '12345';
+// Давайте перевернем символы этой строки в обратном порядке:
+
+// let str = '12345';
+// let result = str.split('').reverse().join('');
+
+// console.log(result); // выведет '54321'
+// Задача 76.7
+
+// Дана строка со словами. Напишите скрипт, который переставит слова в строке в обратном порядке.
+// let str = 'word1 word2 word3'
+// let result = str.split(' ').reverse().join(' ')
+// console.log(result)
