@@ -611,61 +611,217 @@
 // })
 
 
-// Задача 168.1
+
 
 // Дан элемент:
 
 // <p id="elem" class="www ggg zzz"></p>
 // Узнайте количество его классов.
-
-// Задача 168.2
+// let elem = document.querySelector('#elem')
+// console.log(elem.classList.length)
 
 // Дан элемент:
 
 // <p id="elem" class="www ggg zzz"></p>
 // Переберите в цикле его классы.
 
+// let elem = document.querySelector('#elem')
+// let classArray = elem.classList
+// for(let elem of classArray){
+//   document.write("<br>" + elem + "<br>")
+// }
+// console.log(classArray)
 // Добавление классов
-// Изучите теорию по следующим ссылкам:
 
-// classList.add
-
-// Задача 168.3
 
 // Дан элемент:
 
 // <p id="elem" class="www ggg zzz"></p>
 // Добавьте ему класс xxx.
+// let elem = document.querySelector('#elem')
 
+// elem.classList.add('xxx')
+// console.log(elem.classList)
 // Удаление классов
-// Изучите теорию по следующим ссылкам:
 
-// classList.remove
-
-// Задача 168.4
 
 // Дан элемент:
 
 // <p id="elem" class="www ggg zzz"></p>
 // Удалите у него класс www и класс zzz.
+// let elem = document.querySelector('#elem')
+
+// elem.classList.remove('www', 'zzz')
+// console.log(elem.classList)
+
 
 // Проверка классов
-// Изучите теорию по следующим ссылкам:
 
-// classList.contains
-
-// Задача 168.5
 
 // Дан элемент:
 
 // <p id="elem" class="www ggg zzz"></p>
 // Проверьте наличие у него класса ggg.
+// let elem = document.querySelector('#elem')
+// console.log(elem.classList.contains('ggg'))
 
 // Чередование классов
-// Изучите теорию по следующим ссылкам:
-
-// classList.toggle
-
-// Задача 168.6
 
 // Дан элемент. Добавьте ему класс www, если его нет и удалите - если есть.
+
+// let elem = document.querySelector('#elem')
+// elem.classList.toggle('www')
+// console.log(elem)
+
+// let btn = document.querySelector('#button')
+// btn.style.backgroundColor ='yellow'
+// btn.style.borderRadius ='5px'
+// btn.style.border = '3px solid green'
+// btn.style.padding = '20px 20px'
+// btn.style.fontFamily = 'Arial'
+// btn.style.fontSize = '1rem'
+// btn.style.fontWeight = 'bold'
+// btn.style.cursor = 'pointer'
+// let div = document.querySelector('ul')
+// // btn.addEventListener('click', function(){
+// //   div.style.fontSize = '20px'
+// //   div.style.borderTop = '2px solid red'
+// //   div.style.backgroundColor = 'grey'
+// // })
+// btn.addEventListener('click', function(){
+//   div.style.cssFloat= 'left'
+  
+// })
+
+
+// Дан абзац. Даны кнопки 'перечеркнуть', 'сделать жирным', 'сделать красным'. Пусть по нажатию на каждую кнопку заданное действие происходит с абзацем (становится красным, например).
+// let p = document.querySelectorAll('p')
+
+// let btn = document.querySelector('#button')
+// btn.addEventListener('click', function(){
+//   for(let elem of p){
+//     elem.classList.add('through')
+//   }
+// } )
+
+
+// let p = document.querySelectorAll('p')
+
+// let btn = document.querySelector('#button')
+// btn.addEventListener('click', function(){
+//   for(let elem of p){
+//     elem.classList.toggle('through')
+//   }
+// } )
+// let ul = document.querySelector('.none')
+// let btn = document.querySelector('#button')
+// btn.addEventListener('click', function(){
+// ul.classList.toggle('visible')
+
+// let ul = document.querySelector('.none')
+// let firstChild = ul.firstElementChild
+// firstChild.style.color = 'red'
+// let lastChild = ul.lastElementChild
+// lastChild.style.color = 'green'
+// let ul = document.querySelector('.none')
+
+// children = ul.children
+// for(let elem of children){
+//   elem.innerHTML += "!"
+ 
+// }
+
+// let elem = document.querySelector('#elem')
+// elem.parentElement.style.border ="solid 2px red"
+
+// let elem = document.querySelector('#elem')
+// console.log(elem.closest('div'))
+
+//Найдите его соседа сверху и добавьте ему в конец текст '!'.
+
+//  let elem = document.querySelector('#elem')
+//  elem.previousElementSibling.innerHTML += '!'
+
+//Найдите его соседа снизу его соседа снизу (следующий элемент за соседним) и добавьте ему в конец текст '!'.
+
+//  let elem = document.querySelector('#elem')
+//  elem.nextElementSibling.nextElementSibling.innerHTML += '!'
+
+ // Поменяйте местами текст его соседа сверху и текст его соседа снизу.
+//  let elem = document.querySelector('#elem')
+//  let previous = elem.previousElementSibling.innerHTML
+//  let next = elem.nextElementSibling.innerHTML
+//  elem.previousElementSibling.innerHTML = next
+//  elem.nextElementSibling.innerHTML = previous
+
+
+
+// Задача 174.1
+
+// Дан следующий код:
+
+// <div id="elem" data-text="str">text</div>
+// Сделайте так, чтобы по клику на див в конец его текста добавилось содержимое его атрибута data-text.
+
+// let div = document.querySelector('#elem')
+// div.addEventListener('click', function(){
+// div.innerHTML += " " + div.dataset.text
+// })
+// Задача 174.2
+
+// Даны дивы, содержащие в атрибуте data-num свой порядковый номер:
+
+// <div data-num="1">text</div>
+// <div data-num="2">text</div>
+// <div data-num="3">text</div>
+// <div data-num="4">text</div>
+// <div data-num="5">text</div>
+// Сделайте так, чтобы по клику на любой из дивов ему в конец записывался его порядковый номер.
+
+// let divs = document.querySelectorAll('div')
+
+// for(let div of divs){
+//   div.addEventListener('click', function(){
+//     this.innerHTML += ' ' + this.dataset.num
+//   })
+// }
+// Задача 174.3
+
+// Дана кнопка. Сделайте так, чтобы эта кнопка считала количество кликов по ней, записывая их в какой-нибудь пользовательский атрибут. Пусть по двойному клику на эту кнопку на экран выводится, сколько кликов по этой кнопке было сделано.
+// let count = 0
+// let btn = document.querySelector('#button')
+
+// btn.addEventListener('click', function(){
+//  btn.setAttribute('data-count',  count++)
+// console.log(btn.dataset.count)
+// })
+
+
+// Задача 174.4
+
+// Дан инпут:
+
+// <input id="elem" data-length="5">
+// В этом инпуте в атрибуте data-length содержится количество символов, которое нужно ввести в инпут. Сделайте так, чтобы по потери фокуса, если количество введенных символов не совпадает с заданным, выводилось сообщение об этом.
+// let input = document.querySelector('#elem')
+// input.addEventListener('blur', function(){
+//   console.log(input.value.length)
+//   console.log(input.dataset.length)
+//   if(input.value.length != input.dataset.length){
+//   console.log('необходимо ввести 5 символов')
+// }
+// })
+
+// Задача 174.5
+
+// Дан инпут:
+
+// <input id="elem" data-min="5" data-max="10">
+// В этом инпуте атрибуты data-min и data-max содержат диапазон. Сделайте так, чтобы по потери фокуса, если количество введенных символов не попадает в этот диапазон, выводилось сообщение об этом.
+// Дан следующий код:
+
+// <div id="elem" data-product-price="1000" data-product-amount="5">
+// 	товар яблоки
+// </div>
+// Сделайте так, чтобы по клику на див в конец его текста добавлялась стоимость покупки, равная цене, умноженной на количество.
+// Даны абзацы. Переберите их циклом и каждому абзацу в атрибут data-num запишите порядковый номер этого абзаца. Используйте метод setAttribute.
